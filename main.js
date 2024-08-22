@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', () => {
+  buttonPress('a1','q1')
+})
 function buttonPress(id, imgid) {
   var currentid = localStorage.getItem("currentid");
   var currentimgid = localStorage.getItem("currentimgid");
