@@ -5,6 +5,10 @@ function buttonPress(id, imgid) {
     var currentPanel;
     try {
       currentPanel = document.getElementById(currentid);
+       if (currentid !== id) {
+    currentPanel.style.display = "none";
+    document.getElementById(currentimgid).src = "assets/images/icon-plus.svg";
+  }
     } catch {}
   }
   const panel = document.getElementById(id);
@@ -15,10 +19,7 @@ function buttonPress(id, imgid) {
   } else if (window.getComputedStyle(panel).display == "block") {
     panel.style.display = "none";
   }
-  if (currentid !== id) {
-    currentPanel.style.display = "none";
-    document.getElementById(currentimgid).src = "assets/images/icon-plus.svg";
-  }
+ 
   swapImage(imgid);
 }
 function swapImage(id) {

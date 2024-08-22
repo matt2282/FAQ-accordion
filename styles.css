@@ -34,6 +34,7 @@ body {
   text-align: left;
   background-color: white;
   cursor: pointer;
+  padding: 0px;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   width: 100%;
@@ -43,14 +44,16 @@ body {
   outline: solid 2px hsl(292, 42%, 14%);
   
 }
-.questions span:hover{
+.questions span:hover {
+  transform: translateX(10px);
   filter: brightness(4);
 }
+
 .questions img {
   margin-left: auto;
 }
 .questions span {
-  width: 80%;
+  width: 82%;
   font-size: 1rem;
   font-weight: 600;
   color: hsl(292, 42%, 14%);
@@ -59,12 +62,17 @@ body {
   color: hsl(292, 16%, 49%);
   font-size: 0.9rem;
   line-height: 1.25rem;
+  padding: 0px;
+  margin:0px;
 }
 hr {
   background-color: hsla(276, 100%, 97%, 0.788);
   height: 1px;
   border: none;
 }
+
+
+
 @media only screen and (min-width: 770px) {
   body {
     background-image: url("assets/images/background-pattern-desktop.svg");
